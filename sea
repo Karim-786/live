@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<STyle>
+    * {
+    box-sizing: border-box;
+  }   
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+ #myVideo {
+    position: fixed;
+    max-width: 100%;
+    max-width: 100%;
+  }
+  .hello{
+    position:fixed;
+    top:50px;
+    color: rgb(80, 250, 120);
+    background: rgba(255, 255, 255, 0.5);
+    height: 50%;
+  }
+ .content>h1{
+    position:fixed;
+    top:50px;
+    color: rgb(80, 250, 120);
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 20px;
+    line-height: 30px;
+    font-weight:bolder ;
+}
+.hero{
+  position:fixed;
+  top: 160px;
+  color: #dcf70e;
+  width: 100%;
+  padding: 20px;
+}
+
+
+</STyle>
+<body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="sea.mp4" type="video/mp4">
+        </video>
+        <center>
+        <div class="hello">
+        <div class="content">
+        <h1>REGISTRATION FORM</h1>
+        </div>
+        <div class="hero">
+        <form action="submit" method="post">
+        <label for="username" >Username:</label>
+        <input type="text" id="username"placeholder="Enter username" name="username" required>
+        <br><br>
+        <label for="mail" >Email ID:</label>
+        <input type="text" id="Email"placeholder="Enter gmail id" name="gmail id" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder=" Enter password" required>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+</center>
+</body>
+</html>
